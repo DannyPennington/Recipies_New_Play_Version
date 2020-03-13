@@ -2,8 +2,14 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 
 GET     /                           controllers.HomeController.index
 
+GET     /index2                     controllers.HomeController.index2
+
 GET     /help                       controllers.HomeController.help
 
 GET     /todo                       controllers.HomeController.todo
 
 GET     /infinite                   controllers.NewController.infinite
+
+GET     /charset                    controllers.NewController.charset
+
+GET     /cookiepage                 controllers.HomeController.cookiePage
