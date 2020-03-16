@@ -1,4 +1,4 @@
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
-GET     /                           controllers.CD.showCDForm
-POST    /                           controllers.CD.submitCD
+GET     /                           controllers.CDController.showCDForm
+POST    /                           controllers.CDController.submitCD
