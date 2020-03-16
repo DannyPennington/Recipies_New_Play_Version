@@ -1,0 +1,11 @@
+@import models.CD
+@(form: Form[CD])(implicit messagesProvider: MessagesProvider)
+
+@main("Add CD") {
+    @helper.form(routes.CD.submitCD()) {
+        @helper.inputText(form("name"), '_label -> "CD Name", 'class -> "InputField", '_showConstraints -> false)
+        @helper.inputText(form("price"), '_label -> " CD Price", 'class -> "InputField", '_showConstraints -> false)
+        <button type="submit">Create CD</button>
+    }
+
+}
