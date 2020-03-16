@@ -23,3 +23,8 @@ GET     /read                       controllers.NewController.read
 GET     /write                      controllers.NewController.write
 
 POST    /parser                     controllers.NewController.parser
+
+GET     /display                    controllers.TwirlController.display
+
+GET     /func                       controllers.TwirlController.function
+

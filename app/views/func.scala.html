@@ -1,0 +1,10 @@
+@(people: List[Person])
+
+@main("Person function") {
+        @for(i <- people) {
+            <h3>
+                @i.show
+                <br>
+            </h3>
+        }
+}
