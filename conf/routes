@@ -1,4 +1,6 @@
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
-GET     /                           controllers.CDController.showCDForm
-POST    /                           controllers.CDController.submitCD
+GET     /                           controllers.HomeController.index
+
+GET     /submit                     controllers.CDController.showCDForm
+POST    /submit                     controllers.CDController.submitCD
