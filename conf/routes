@@ -4,6 +4,8 @@ GET     /                           controllers.HomeController.index
 
 GET     /index2                     controllers.HomeController.index2
 
+GET     /index3                     controllers.HomeController.index3
+
 GET     /help                       controllers.HomeController.help
 
 GET     /todo                       controllers.HomeController.todo
@@ -13,3 +15,11 @@ GET     /infinite                   controllers.NewController.infinite
 GET     /charset                    controllers.NewController.charset
 
 GET     /cookiepage                 controllers.HomeController.cookiePage
+
+GET     /session                    controllers.HomeController.session
+
+GET     /read                       controllers.NewController.read
+
+GET     /write                      controllers.NewController.write
+
+POST    /parser                     controllers.NewController.parser
