@@ -1,0 +1,18 @@
+@import scala.collection.mutable.ArrayBuffer
+
+@(people: ArrayBuffer[People])()(implicit messagesProvider: MessagesProvider)
+
+<div>
+@main("Contacts") {
+    @for(person <- people) {
+        Name: @person.name
+        <br>
+        Contact number: @person.phone
+        <br>
+        Contact email: @person.email
+        <br>
+        Comments: @person.comments
+        <br>
+    }
+}
+</div>

@@ -7,3 +7,5 @@ POST    /submit                     controllers.CDController.submitCD
 
 GET     /contact                    controllers.PeopleController.showPeopleForm
 POST    /contact                    controllers.PeopleController.submitPeople
+
+GET     /messages                   controllers.PeopleController.showMessages
