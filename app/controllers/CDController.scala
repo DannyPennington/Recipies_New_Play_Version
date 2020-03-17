@@ -14,7 +14,7 @@ class CDController @Inject()(cc: ControllerComponents) extends AbstractControlle
     CD.createCDForm.bindFromRequest.fold({ formWithErrors =>
       BadRequest(views.html.cd(formWithErrors))
     }, { cd =>
-      Ok(cd.toString())
+      Ok(views.html.index(cd.toString()))
     })
   }
 

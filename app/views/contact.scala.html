@@ -1,0 +1,12 @@
+@import models.People
+@(form: Form[People])(implicit messagesProvider: MessagesProvider)
+
+@main("Add Person") {
+    @helper.form(routes.PeopleController.submitPeople()) {
+        @helper.inputText(form("name"), '_label -> "Contact name", 'class -> "InputField", '_showConstraints -> false)
+        @helper.inputText(form("phone"), '_label -> "Contact number", 'class -> "InputField", '_showConstraints -> false)
+        @helper.inputText(form("email"), '_label -> "Contact email", 'class -> "InputField", '_showConstraints -> false)
+        @helper.inputText(form("comments"), '_label -> "Additional comments", 'class -> "InputField", '_showConstraints -> false)
+        <button type="submit">Submit request</button>
+    }
+}
